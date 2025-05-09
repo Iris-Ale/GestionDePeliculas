@@ -40,7 +40,7 @@ public class GestorPelicula {
         return disponibles;
     }
 
-    public void marcarPeliculaDsiponible (int id){
+    public void marcarPeliculaDisponible(int id){
         for (Pelicula p : peliculas){
             if (p.getId() == id){
                 p.setDisponible (true);

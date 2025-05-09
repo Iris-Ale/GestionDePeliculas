@@ -18,11 +18,26 @@ public class Main {
         Pelicula p5 = new Pelicula (5,"Dunkerque",false);
 
         //Agregar peliculas a la lista creada
+        System.out.println("Agregando peliculas...");
         gestor.agregarPelicula (p1);
         gestor.agregarPelicula (p2);
         gestor.agregarPelicula (p3);
         gestor.agregarPelicula (p4);
         gestor.agregarPelicula (p5);
+
+        //Comprobar peliculas disponibles
+        System.out.println("Peliculas disponibles hasta ahora: \n");
+        System.out.println(gestor.obtenerPeliculasDisponibles ());
+
+        //Establecer pelicula como disponible
+        gestor.marcarPeliculaDisponible (5);
+        System.out.println("\nMarcando pelicula como disponible...");
+        System.out.println("Peliculas disponibles ahora: \n");
+        System.out.println(gestor.obtenerPeliculasDisponibles ());
+
+        //Eliminar una pelicula
+        System.out.println("Eliminando peliculas...");
+
 
     }
 }
