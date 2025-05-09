@@ -1,7 +1,7 @@
 package com.methaporce.modelo;
 
 import java.util.ArrayList;
-import java.util.List;
+
 public class GestorPelicula {
 
     ArrayList<Pelicula> peliculas = new ArrayList<>();
@@ -20,7 +20,7 @@ public class GestorPelicula {
         }
     }
 
-    public void obtenerPeliculasDisponibles){
+    public ArrayList<Pelicula> obtenerPeliculasDisponibles() {
         ArrayList<Pelicula> disponibles = new ArrayList <>();
             for (Pelicula pe : peliculas){
                 if (pe.isDisponible()){
@@ -30,7 +30,7 @@ public class GestorPelicula {
             return disponibles;
     }
 
-    public void obtenerPeliculasNoDisponibles (){
+    public ArrayList<Pelicula> obtenerPeliculasNoDisponibles (){
         ArrayList<Pelicula> disponibles = new ArrayList <>();
         for (Pelicula pe : peliculas){
             if (!pe.isDisponible()){
